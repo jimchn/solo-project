@@ -9,7 +9,8 @@ class App extends Component {
             tweets: [],
         };
     }
-
+    
+    //Fetches the data from the backend
     componentDidMount() {
         fetch('/fetchData').
         then(response => response.json())
