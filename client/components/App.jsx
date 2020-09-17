@@ -10,10 +10,10 @@ class App extends Component {
         };
     }
     
-    //Fetches the data from the backend
+    //Fetches the data from the backgrou
     componentDidMount() {
-        fetch('/fetchData').
-        then(response => response.json())
+        fetch('/fetchData')
+        .then(response => response.json())
         .then(dataBack => {
             this.setState({ tweets: dataBack })
         })
